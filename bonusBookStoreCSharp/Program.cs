@@ -50,11 +50,12 @@ Console.WriteLine("scrivi il numero di stelline da 1 a 5");
 string valutation = Console.ReadLine();
 int valutationParse = int.Parse(valutation);
 
-if (valutationParse == 0)
-{
-    Console.WriteLine("zoro stelline :(");
-}
-else if (valutationParse == 1)
+
+
+
+
+
+ if (valutationParse == 1)
 {
     Console.WriteLine("la valutazione e': *");
 } else if (valutationParse == 2)
@@ -74,11 +75,44 @@ else if (valutationParse == 1)
 
     Console.WriteLine("la valutazione e': *****");
 
+}
+else if(valutationParse == 0)
+{
+    Console.WriteLine("questo libro ha 0 stelline");
 };
 
 
 
 
+Console.WriteLine("inserisci il numero di recensioni del libro: ");
+string numberRewiew = Console.ReadLine();
+
+int numberRewiewParse = int.Parse(numberRewiew);
+Console.WriteLine("le recensioni del libro sono " + numberRewiewParse);
 
 
 
+Console.WriteLine("ha la versione kindle? digita Si o No");
+
+string havekindle = Console.ReadLine();
+if(havekindle == "Si")
+{
+    Console.WriteLine("ha la versione kindle");
+}else if(havekindle == "No")
+{
+    Console.WriteLine("non ha la versione kindle");
+
+};
+
+Console.WriteLine("ha la copertina flessibile? digita Si o No");
+
+string haveFlexible = Console.ReadLine();
+if (haveFlexible == "Si")
+{
+    Console.WriteLine("ha la versione kindle");
+}
+else if (haveFlexible == "No")
+{
+    Console.WriteLine("non ha la versione kindle");
+
+};
