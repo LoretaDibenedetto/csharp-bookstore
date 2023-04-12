@@ -12,7 +12,20 @@ Console.WriteLine("l' autore e':" +  autor);
 Console.WriteLine("inserisci l'ISBN:");
 
 string ISBN = Console.ReadLine();
-int ISBNparse = int.Parse(ISBN);
+long ISBNparse = long.Parse(ISBN);
 
-Console.WriteLine(ISBNparse);
+Console.WriteLine("il codice ISBN e'" + ISBNparse);
+
+Console.WriteLine("inserisci il numero di pagine: ");
+
+string numberPage = Console.ReadLine();
+int numberPageParse  = int.Parse(numberPage);
+
+Console.WriteLine("le pagine di questo libro sono:" + numberPageParse);
+
+Console.WriteLine("inserisci il peso del libro: ");
+string weight = Console.ReadLine();
+int weightParse = int.Parse(weight);
+
+Console.WriteLine("il peso del libro e' " +  weightParse + "g");
 
