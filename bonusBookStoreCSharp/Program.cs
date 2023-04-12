@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.ComponentModel.Design;
+
 Console.WriteLine("inserisci titolo:");
 
 string title = Console.ReadLine();
@@ -44,15 +47,90 @@ Console.WriteLine("l'altezza del libro e'" + heightParse+" cm " + "la profondita
 
 
 
+
+
+
 Console.WriteLine("scrivi il numero di stelline da 1 a 5");
 
+string stringrew = Console.ReadLine();
 
+int numrew = int.Parse(stringrew);
+
+if (numrew == 1)
+{
+    Console.WriteLine("questo libro ha 1 stellina");
+}
+else if (numrew == 2)
+{
+    Console.WriteLine("questo libro ha 2 stelline");
+}
+else if (numrew == 3)
+{
+    Console.WriteLine("questo libro ha 3 stelline");
+
+
+}
+else if (numrew == 4)
+{
+    Console.WriteLine("questo libro ha 4 stelline");
+
+}
+else if (numrew == 5)
+{
+    Console.WriteLine("questo libro ha 5 stelline");
+
+};
+
+
+
+int n = 0;
+
+while (numrew < 0 || numrew > 5)
+{
+    Console.WriteLine("hai scritto " + numrew + " dovevi scrivere un numero da 1 a 5");
+
+    string strrew2 = Console.ReadLine();
+    int num2 = int.Parse(strrew2);
+
+    n++;
+
+    if (num2 == 1)
+    {
+        Console.WriteLine("questo libro ha 1 stellina");
+    }
+    else if (num2 == 2)
+    {
+        Console.WriteLine("questo libro ha 2 stelline");
+    }
+    else if (num2 == 3)
+    {
+        Console.WriteLine("questo libro ha 3 stelline");
+
+
+    }
+    else if (num2 == 4)
+    {
+        Console.WriteLine("questo libro ha 4 stelline");
+
+    }
+    else if (num2 == 5)
+    {
+        Console.WriteLine("questo libro ha 5 stelline");
+
+    }
+
+    break;
+};
+
+
+
+
+
+
+/*
+Console.WriteLine("scrivi il numero di stelline da 1 a 5");
 string valutation = Console.ReadLine();
 int valutationParse = int.Parse(valutation);
-
-
-
-
 
 
  if (valutationParse == 1)
@@ -81,7 +159,7 @@ else if(valutationParse == 0)
     Console.WriteLine("questo libro ha 0 stelline");
 };
 
-
+*/
 
 
 Console.WriteLine("inserisci il numero di recensioni del libro: ");
