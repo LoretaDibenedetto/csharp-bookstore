@@ -50,80 +50,27 @@ Console.WriteLine("l'altezza del libro e'" + heightParse+" cm " + "la profondita
 
 
 
-Console.WriteLine("scrivi il numero di stelline da 1 a 5");
+Console.WriteLine("inserisci un numero da 1 a 5");
+string input = Console.ReadLine();
 
-string stringrew = Console.ReadLine();
+int inputParse = int.Parse(input);
 
-int numrew = int.Parse(stringrew);
+int[] numberRewiew = { 1, 2, 3, 4, 5 };
 
-if (numrew == 1)
+
+
+for (int a = 0; a < numberRewiew.Length; a++)
 {
-    Console.WriteLine("questo libro ha 1 stellina");
-}
-else if (numrew == 2)
-{
-    Console.WriteLine("questo libro ha 2 stelline");
-}
-else if (numrew == 3)
-{
-    Console.WriteLine("questo libro ha 3 stelline");
-
-
-}
-else if (numrew == 4)
-{
-    Console.WriteLine("questo libro ha 4 stelline");
-
-}
-else if (numrew == 5)
-{
-    Console.WriteLine("questo libro ha 5 stelline");
-
+    // Console.WriteLine( "- "+  numberRewiew[i]);
+    
+   if (inputParse == numberRewiew[a])
+    {
+        Console.WriteLine("il libro ha " + numberRewiew[a] + " stelle");
+    };
+    
 };
 
-
-
-int n = 0;
-
-while (numrew < 0 || numrew > 5)
-{
-    Console.WriteLine("hai scritto " + numrew + " dovevi scrivere un numero da 1 a 5");
-
-    string strrew2 = Console.ReadLine();
-    int num2 = int.Parse(strrew2);
-
-    n++;
-
-    if (num2 == 1)
-    {
-        Console.WriteLine("questo libro ha 1 stellina");
-    }
-    else if (num2 == 2)
-    {
-        Console.WriteLine("questo libro ha 2 stelline");
-    }
-    else if (num2 == 3)
-    {
-        Console.WriteLine("questo libro ha 3 stelline");
-
-
-    }
-    else if (num2 == 4)
-    {
-        Console.WriteLine("questo libro ha 4 stelline");
-
-    }
-    else if (num2 == 5)
-    {
-        Console.WriteLine("questo libro ha 5 stelline");
-
-    }
-
-    break;
-};
-
-
-
+ 
 
 
 
@@ -163,20 +110,20 @@ else if(valutationParse == 0)
 
 
 Console.WriteLine("inserisci il numero di recensioni del libro: ");
-string numberRewiew = Console.ReadLine();
+string reviewcounter = Console.ReadLine();
 
-int numberRewiewParse = int.Parse(numberRewiew);
-Console.WriteLine("le recensioni del libro sono " + numberRewiewParse);
+int numberReviewParse = int.Parse(reviewcounter);
+Console.WriteLine("le recensioni del libro sono " + numberReviewParse);
 
 
 
 Console.WriteLine("ha la versione kindle? digita Si o No");
 
 string havekindle = Console.ReadLine();
-if(havekindle == "Si")
+if(havekindle == "Si" || havekindle == "si")
 {
     Console.WriteLine("ha la versione kindle");
-}else if(havekindle == "No")
+}else if(havekindle == "No"|| havekindle == "no")
 {
     Console.WriteLine("non ha la versione kindle");
 
@@ -185,11 +132,11 @@ if(havekindle == "Si")
 Console.WriteLine("ha la copertina flessibile? digita Si o No");
 
 string haveFlexible = Console.ReadLine();
-if (haveFlexible == "Si")
+if (haveFlexible == "Si" || haveFlexible == "si")
 {
     Console.WriteLine("ha la versione kindle");
 }
-else if (haveFlexible == "No")
+else if (haveFlexible == "No"|| haveFlexible == "no")
 {
     Console.WriteLine("non ha la versione kindle");
 
